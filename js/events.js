@@ -18,8 +18,10 @@ function pressIt(){
 }
 
 function submitIt(){
-  $('form').on('submit',funtion(){
-    alert("Your form is going to be submitted now.");
+  $("form").on("submit", function() {
+  if ($( "input:first" ).val() === "correct") {
+    alert('your form is going to be submitted now');
+    return;
   });
 }
 
